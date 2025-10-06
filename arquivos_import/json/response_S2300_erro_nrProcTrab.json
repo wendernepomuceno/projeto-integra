@@ -1,0 +1,154 @@
+{
+  "id": 13672840,
+  "tipoOcorrencia": "TSV_INICIO",
+  "referencia": "62753|1753909618813",
+  "operacao": "NORMAL",
+  "retificarRecibo": null,
+  "dataOcorrencia": 1753909618000,
+  "dataRecebimento": 1753909618000,
+  "idOrigemControle": 360800,
+  "txtDadosOcorrencia": "{\"tipo\":\".TSVInicio\",\"ideEmpregador\":{\"tpInsc\":1,\"nrInsc\":\"29394729\"},\"trabalhador\":{\"cpfTrab\":\"03064412175\",\"nmTrab\":\"YGOR GONCALVES NOGUEIRA\",\"sexo\":\"M\",\"racaCor\":1,\"estCiv\":1,\"grauInstr\":\"09\",\"nascimento\":{\"dtNascto\":830574000000,\"paisNascto\":\"105\",\"paisNac\":\"105\"},\"endereco\":{\"brasil\":{\"tpLograd\":\"AV\",\"dscLograd\":\"T7\",\"nrLograd\":\"371\",\"complemento\":\"26 ANDAR EDLOURENÇO OFFICE\",\"bairro\":\"SETOR SUL\",\"cep\":\"74141110\",\"codMunic\":5208707,\"uf\":\"GO\"}},\"infoDeficiencia\":{\"defFisica\":\"N\",\"defVisual\":\"N\",\"defAuditiva\":\"N\",\"defMental\":\"N\",\"defIntelectual\":\"N\",\"reabReadap\":\"N\"}},\"infoTSVInicio\":{\"cadIni\":\"N\",\"codCateg\":313,\"matricula\":\"000000000062753P00000004015757\",\"nrProcTrab\":\"00000202516448063205\",\"dtInicio\":1751338800000,\"infoComplementares\":{\"cargoFuncao\":{\"nmCargo\":\"Fiscal de Sala 1 - DGPP\",\"cbocargo\":\"411010\"}}},\"cpf\":\"03064412175\",\"dataEvento\":1751338800000,\"matricula\":\"000000000062753P00000004015757\"}",
+  "cnpjEmpregador": "29394729",
+  "dadosOcorrencia": {
+    "tipo": ".TSVInicio",
+    "ideEmpregador": {
+      "tpInsc": 1,
+      "nrInsc": "29394729"
+    },
+    "trabalhador": {
+      "cpfTrab": "03064412175",
+      "nmTrab": "YGOR GONCALVES NOGUEIRA",
+      "sexo": "M",
+      "racaCor": 1,
+      "estCiv": 1,
+      "grauInstr": "09",
+      "nmSoc": null,
+      "nascimento": {
+        "dtNascto": 830574000000,
+        "paisNascto": "105",
+        "paisNac": "105"
+      },
+      "endereco": {
+        "brasil": {
+          "tpLograd": "AV",
+          "dscLograd": "T7",
+          "nrLograd": "371",
+          "complemento": "26 ANDAR EDLOURENÇO OFFICE",
+          "bairro": "SETOR SUL",
+          "cep": "74141110",
+          "codMunic": 5208707,
+          "uf": "GO"
+        },
+        "exterior": null
+      },
+      "trabImig": null,
+      "infoDeficiencia": {
+        "defFisica": "N",
+        "defVisual": "N",
+        "defAuditiva": "N",
+        "defMental": "N",
+        "defIntelectual": "N",
+        "reabReadap": "N",
+        "infoCota": null,
+        "observacao": null
+      },
+      "dependente": null,
+      "contato": null
+    },
+    "infoTSVInicio": {
+      "cadIni": "N",
+      "codCateg": 313,
+      "matricula": "000000000062753P00000004015757",
+      "nrProcTrab": "00000202516448063205",
+      "dtInicio": 1751338800000,
+      "natAtividade": null,
+      "infoComplementares": {
+        "cargoFuncao": {
+          "nmCargo": "Fiscal de Sala 1 - DGPP",
+          "nmFuncao": null,
+          "cbocargo": "411010",
+          "cbofuncao": null
+        },
+        "remuneracao": null,
+        "fgts": null,
+        "infoDirigenteSindical": null,
+        "infoTrabCedido": null,
+        "infoEstagiario": null,
+        "infoMandElet": null,
+        "localTrabGeral": null
+      },
+      "afastamento": null,
+      "termino": null,
+      "mudancaCPF": null
+    },
+    "cpf": "03064412175",
+    "dataEvento": 1751338800000,
+    "matricula": "000000000062753P00000004015757"
+  },
+  "evento": {
+    "id": 23442516,
+    "ocorrencia": 13672840,
+    "estado": {
+      "id": 4,
+      "descricao": "PROCESSADO COM ERRO"
+    },
+    "idEvento": "ID1293947290000002025073018073311438",
+    "tipoEvento": {
+      "desTipo": "Trabalhador Sem Vínculo de Emprego/Estatutário - Início",
+      "grupoTipoEvento": {
+        "id": 2,
+        "descricao": "Eventos Não Periódicos"
+      },
+      "codTipo": 2300
+    },
+    "enviosEvento": [
+      {
+        "id": 14688611,
+        "lote": {
+          "id": 1653019,
+          "estado": {
+            "id": 4,
+            "descricao": "PROCESSADO COM ERRO"
+          },
+          "codigoResposta": {
+            "id": 11,
+            "desResposta": "Lote recebido com sucesso",
+            "codGrupoResposta": 1,
+            "codResposta": 201
+          },
+          "dtaEnvio": 1753909722000,
+          "protocolo": "1.1.202507.0000000011917998061",
+          "retorno": "<eSocial xmlns=\"http://www.esocial.gov.br/schema/lote/eventos/envio/retornoEnvio/v1_1_0\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <retornoEnvioLoteEventos>\n        <ideEmpregador>\n            <tpInsc>1</tpInsc>\n            <nrInsc>29394729</nrInsc>\n        </ideEmpregador>\n        <ideTransmissor>\n            <tpInsc>1</tpInsc>\n            <nrInsc>02476034000182</nrInsc>\n        </ideTransmissor>\n        <status>\n            <cdResposta>201</cdResposta>\n            <descResposta>Lote Recebido com Sucesso.</descResposta>\n        </status>\n        <dadosRecepcaoLote>\n            <dhRecepcao>2025-07-30T18:08:42.397</dhRecepcao>\n            <versaoAplicativoRecepcao>0.1.0.0</versaoAplicativoRecepcao>\n            <protocoloEnvio>1.1.202507.0000000011917998061</protocoloEnvio>\n        </dadosRecepcaoLote>\n    </retornoEnvioLoteEventos>\n</eSocial>",
+          "resposta": {
+            "id": 11,
+            "desResposta": "Lote recebido com sucesso",
+            "codGrupoResposta": 1,
+            "codResposta": 201
+          }
+        },
+        "codRespostaProcessamento": {
+          "id": 4,
+          "desResposta": "Erro no conteúdo do evento.",
+          "codGrupoResposta": 2,
+          "codResposta": 401
+        },
+        "dtaGeracaoEvento": 1753909715000,
+        "versao": "S-1:3",
+        "erroInterno": null,
+        "errosProcessamento": [
+          {
+            "id": 6988969,
+            "descricao": "Número do processo judicial inválido.\nAção Sugerida: Verifique se as informações do número do processo e tipo do processo estão corretas.",
+            "localizacao": "/eSocial/evtTSVInicio/infoTSVInicio/nrProcTrab",
+            "tipoErroProcessamento": {
+              "id": 1,
+              "descricao": "Erro"
+            },
+            "codMensagem": 282
+          }
+        ]
+      }
+    ],
+    "nrRecibo": null
+  }
+}

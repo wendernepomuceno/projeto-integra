@@ -1,0 +1,193 @@
+{
+  "id": 13838088,
+  "tipoOcorrencia": "ADMISSAO_TRABALHADOR",
+  "referencia": "626802|1754599906353",
+  "operacao": "NORMAL",
+  "retificarRecibo": null,
+  "dataOcorrencia": 1754599906000,
+  "dataRecebimento": 1754599907000,
+  "idOrigemControle": 341367,
+  "txtDadosOcorrencia": "{\"tipo\":\".Admissao\",\"ideEmpregador\":{\"tpInsc\":1,\"nrInsc\":\"01409705\"},\"trabalhador\":{\"cpfTrab\":\"04187231684\",\"nmTrab\":\"RAQUEL COSTA GUIMARAES NASCIMENTO\",\"sexo\":\"F\",\"racaCor\":1,\"estCiv\":2,\"grauInstr\":\"09\",\"nascimento\":{\"dtNascto\":342759600000,\"paisNascto\":\"105\",\"paisNac\":\"105\"},\"endereco\":{\"brasil\":{\"tpLograd\":\"AV\",\"dscLograd\":\"ANHANGUERA\",\"nrLograd\":\"S/N\",\"complemento\":\"OUADRA 71 LOTE AREA\",\"bairro\":\"SETOR LESTE VILA NOVA\",\"cep\":\"74643010\",\"codMunic\":5208707,\"uf\":\"GO\"}},\"infoDeficiencia\":{\"defFisica\":\"N\",\"defVisual\":\"N\",\"defAuditiva\":\"N\",\"defMental\":\"N\",\"defIntelectual\":\"N\",\"reabReadap\":\"N\"},\"dependente\":[],\"contato\":{}},\"vinculo\":{\"matricula\":\"V626802\",\"tpRegTrab\":2,\"tpRegPrev\":1,\"cadIni\":\"N\",\"infoRegimeTrab\":{\"infoEstatutario\":{\"tpProv\":7,\"dtExercicio\":1748833200000}},\"infoContrato\":{\"nmCargo\":\"C. Temporário - Professor Nível Superior - Dec. 9.853 - SEDUC\",\"acumCargo\":\"N\",\"codCateg\":306,\"remuneracao\":{\"undSalFixo\":0},\"duracao\":{\"tpContr\":0},\"localTrabalho\":{\"localTrabGeral\":{\"tpInsc\":1,\"nrInsc\":\"01409705000120\",\"descComp\":\"SECRETARIA DE ESTADO DA EDUCAÇÃO\"}},\"horContratual\":{\"tpJornada\":0,\"tmpParc\":0},\"treiCap\":[],\"cbocargo\":\"231210\"}},\"dataEvento\":1748833200000,\"matricula\":\"V626802\",\"cpf\":\"04187231684\"}",
+  "cnpjEmpregador": "01409705",
+  "dadosOcorrencia": {
+    "tipo": ".Admissao",
+    "ideEmpregador": {
+      "tpInsc": 1,
+      "nrInsc": "01409705"
+    },
+    "trabalhador": {
+      "cpfTrab": "04187231684",
+      "nmTrab": "RAQUEL COSTA GUIMARAES NASCIMENTO",
+      "sexo": "F",
+      "racaCor": 1,
+      "estCiv": 2,
+      "grauInstr": "09",
+      "nmSoc": null,
+      "nascimento": {
+        "dtNascto": 342759600000,
+        "paisNascto": "105",
+        "paisNac": "105"
+      },
+      "endereco": {
+        "brasil": {
+          "tpLograd": "AV",
+          "dscLograd": "ANHANGUERA",
+          "nrLograd": "S/N",
+          "complemento": "OUADRA 71 LOTE AREA",
+          "bairro": "SETOR LESTE VILA NOVA",
+          "cep": "74643010",
+          "codMunic": 5208707,
+          "uf": "GO"
+        },
+        "exterior": null
+      },
+      "trabImig": null,
+      "infoDeficiencia": {
+        "defFisica": "N",
+        "defVisual": "N",
+        "defAuditiva": "N",
+        "defMental": "N",
+        "defIntelectual": "N",
+        "reabReadap": "N",
+        "infoCota": null,
+        "observacao": null
+      },
+      "dependente": [],
+      "contato": {
+        "fonePrinc": null,
+        "emailPrinc": null
+      }
+    },
+    "vinculo": {
+      "matricula": "V626802",
+      "tpRegTrab": 2,
+      "tpRegPrev": 1,
+      "cadIni": "N",
+      "infoRegimeTrab": {
+        "infoCeletista": null,
+        "infoEstatutario": {
+          "tpProv": 7,
+          "dtExercicio": 1748833200000,
+          "tpPlanRP": null,
+          "indTetoRGPS": null,
+          "indAbonoPerm": null,
+          "dtIniAbono": null
+        }
+      },
+      "infoContrato": {
+        "nmCargo": "C. Temporário - Professor Nível Superior - Dec. 9.853 - SEDUC",
+        "dtIngrCargo": null,
+        "nmFuncao": null,
+        "acumCargo": "N",
+        "codCateg": 306,
+        "remuneracao": {
+          "vrSalFx": null,
+          "undSalFixo": 0,
+          "dscSalVar": null
+        },
+        "duracao": {
+          "tpContr": 0,
+          "dtTerm": null,
+          "objDet": null,
+          "clauAssec": null
+        },
+        "localTrabalho": {
+          "localTrabGeral": {
+            "tpInsc": 1,
+            "nrInsc": "01409705000120",
+            "descComp": "SECRETARIA DE ESTADO DA EDUCAÇÃO"
+          },
+          "localTempDom": null
+        },
+        "horContratual": {
+          "qtdHrsSem": null,
+          "tpJornada": 0,
+          "dscTpJorn": null,
+          "tmpParc": 0,
+          "horNoturno": null,
+          "dscJorn": null
+        },
+        "alvaraJudicial": null,
+        "observacoes": null,
+        "treiCap": [],
+        "cbofuncao": null,
+        "cbocargo": "231210"
+      },
+      "sucessaoVinc": null,
+      "transfDom": null,
+      "mudancaCPF": null,
+      "afastamento": null,
+      "desligamento": null,
+      "cessao": null
+    },
+    "dataEvento": 1748833200000,
+    "matricula": "V626802",
+    "cpf": "04187231684"
+  },
+  "evento": {
+    "id": 23608706,
+    "ocorrencia": 13838088,
+    "estado": {
+      "id": 4,
+      "descricao": "PROCESSADO COM ERRO"
+    },
+    "idEvento": "ID1014097050000002025080717521404815",
+    "tipoEvento": {
+      "desTipo": "Cadastramento Inicial do Vínculo e Admissão/Ingresso de Trabalhador",
+      "grupoTipoEvento": {
+        "id": 2,
+        "descricao": "Eventos Não Periódicos"
+      },
+      "codTipo": 2200
+    },
+    "enviosEvento": [
+      {
+        "id": 14853965,
+        "lote": {
+          "id": 1656658,
+          "estado": {
+            "id": 4,
+            "descricao": "PROCESSADO COM ERRO"
+          },
+          "codigoResposta": {
+            "id": 11,
+            "desResposta": "Lote recebido com sucesso",
+            "codGrupoResposta": 1,
+            "codResposta": 201
+          },
+          "dtaEnvio": 1754599994000,
+          "protocolo": "1.1.202508.0000000011957481440",
+          "retorno": "<eSocial xmlns=\"http://www.esocial.gov.br/schema/lote/eventos/envio/retornoEnvio/v1_1_0\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <retornoEnvioLoteEventos>\n        <ideEmpregador>\n            <tpInsc>1</tpInsc>\n            <nrInsc>01409705</nrInsc>\n        </ideEmpregador>\n        <ideTransmissor>\n            <tpInsc>1</tpInsc>\n            <nrInsc>02476034000182</nrInsc>\n        </ideTransmissor>\n        <status>\n            <cdResposta>201</cdResposta>\n            <descResposta>Lote Recebido com Sucesso.</descResposta>\n        </status>\n        <dadosRecepcaoLote>\n            <dhRecepcao>2025-08-07T17:53:14.563</dhRecepcao>\n            <versaoAplicativoRecepcao>0.1.0.0</versaoAplicativoRecepcao>\n            <protocoloEnvio>1.1.202508.0000000011957481440</protocoloEnvio>\n        </dadosRecepcaoLote>\n    </retornoEnvioLoteEventos>\n</eSocial>",
+          "resposta": {
+            "id": 11,
+            "desResposta": "Lote recebido com sucesso",
+            "codGrupoResposta": 1,
+            "codResposta": 201
+          }
+        },
+        "codRespostaProcessamento": {
+          "id": 4,
+          "desResposta": "Erro no conteúdo do evento.",
+          "codGrupoResposta": 2,
+          "codResposta": 401
+        },
+        "dtaGeracaoEvento": 1754599994000,
+        "versao": "S-1:3",
+        "erroInterno": null,
+        "errosProcessamento": [
+          {
+            "id": 7020452,
+            "descricao": "A data de nascimento do trabalhador está divergente da base da Receita Federal. Verifique se os dados foram digitados corretamente ou oriente o trabalhador para procurar uma unidade conveniada da Receita Federal para atualizar os dados.",
+            "localizacao": "/eSocial/evtAdmissao/trabalhador/nascimento/dtNascto",
+            "tipoErroProcessamento": {
+              "id": 1,
+              "descricao": "Erro"
+            },
+            "codMensagem": 176
+          }
+        ]
+      }
+    ],
+    "nrRecibo": null
+  }
+}

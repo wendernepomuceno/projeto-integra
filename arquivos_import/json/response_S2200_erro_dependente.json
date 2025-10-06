@@ -1,0 +1,168 @@
+{
+  "id": 13662660,
+  "tipoOcorrencia": "ADMISSAO_TRABALHADOR",
+  "referencia": "627777|1752707205857",
+  "operacao": "NORMAL",
+  "retificarRecibo": null,
+  "dataOcorrencia": 1752707205000,
+  "dataRecebimento": 1752707205000,
+  "idOrigemControle": 356137,
+  "txtDadosOcorrencia": "{\"tipo\":\".Admissao\",\"ideEmpregador\":{\"tpInsc\":1,\"nrInsc\":\"02476034\"},\"trabalhador\":{\"cpfTrab\":\"03458170103\",\"nmTrab\":\"ALINE RAMOS CALIXTO\",\"sexo\":\"F\",\"racaCor\":3,\"estCiv\":2,\"grauInstr\":\"07\",\"nascimento\":{\"dtNascto\":612586800000,\"paisNascto\":\"105\",\"paisNac\":\"105\"},\"endereco\":{\"brasil\":{\"tpLograd\":\"R\",\"dscLograd\":\"82\",\"nrLograd\":\"300\",\"complemento\":\"PALÁCIO PEDRO LUDOVICO TEIXEIR\",\"bairro\":\"CENTRO\",\"cep\":\"74015908\",\"codMunic\":5208707,\"uf\":\"GO\"}},\"infoDeficiencia\":{\"defFisica\":\"N\",\"defVisual\":\"N\",\"defAuditiva\":\"N\",\"defMental\":\"N\",\"defIntelectual\":\"N\",\"reabReadap\":\"N\"},\"dependente\":[{\"tpDep\":\"03\",\"nmDep\":\"ALINE RAMOS CALIXTO\",\"dtNascto\":1164164400000,\"cpfDep\":\"\",\"depIRRF\":\"N\",\"depSF\":\"N\",\"incTrab\":\"N\"}],\"contato\":{}},\"vinculo\":{\"matricula\":\"V627777\",\"tpRegTrab\":2,\"tpRegPrev\":1,\"cadIni\":\"N\",\"infoRegimeTrab\":{\"infoEstatutario\":{\"tpProv\":2,\"dtExercicio\":1751857200000}},\"infoContrato\":{\"nmFuncao\":\"Assessor A7\",\"acumCargo\":\"N\",\"codCateg\":302,\"remuneracao\":{\"undSalFixo\":0},\"duracao\":{\"tpContr\":0},\"localTrabalho\":{\"localTrabGeral\":{\"tpInsc\":1,\"nrInsc\":\"02476034000182\",\"descComp\":\"SECRETARIA DE ESTADO DA ADMINISTRAÇÃO\"}},\"horContratual\":{\"tpJornada\":0,\"tmpParc\":0},\"treiCap\":[],\"cbofuncao\":\"411010\"}},\"cpf\":\"03458170103\",\"dataEvento\":1751857200000,\"matricula\":\"V627777\"}",
+  "cnpjEmpregador": "02476034",
+  "dadosOcorrencia": {
+    "tipo": ".Admissao",
+    "ideEmpregador": {
+      "tpInsc": 1,
+      "nrInsc": "02476034"
+    },
+    "trabalhador": {
+      "cpfTrab": "03458170103",
+      "nmTrab": "ALINE RAMOS CALIXTO",
+      "sexo": "F",
+      "racaCor": 3,
+      "estCiv": 2,
+      "grauInstr": "07",
+      "nmSoc": null,
+      "nascimento": {
+        "dtNascto": 612586800000,
+        "paisNascto": "105",
+        "paisNac": "105"
+      },
+      "endereco": {
+        "brasil": {
+          "tpLograd": "R",
+          "dscLograd": "82",
+          "nrLograd": "300",
+          "complemento": "PALÁCIO PEDRO LUDOVICO TEIXEIR",
+          "bairro": "CENTRO",
+          "cep": "74015908",
+          "codMunic": 5208707,
+          "uf": "GO"
+        },
+        "exterior": null
+      },
+      "trabImig": null,
+      "infoDeficiencia": {
+        "defFisica": "N",
+        "defVisual": "N",
+        "defAuditiva": "N",
+        "defMental": "N",
+        "defIntelectual": "N",
+        "reabReadap": "N",
+        "infoCota": null,
+        "observacao": null
+      },
+      "dependente": [
+        {
+          "tpDep": "03",
+          "nmDep": "ALINE RAMOS CALIXTO",
+          "dtNascto": 1164164400000,
+          "cpfDep": "",
+          "sexoDep": null,
+          "depIRRF": "N",
+          "depSF": "N",
+          "incTrab": "N",
+          "descrDep": null
+        }
+      ],
+      "contato": {
+        "fonePrinc": null,
+        "emailPrinc": null
+      }
+    },
+    "vinculo": {
+      "matricula": "V627777",
+      "tpRegTrab": 2,
+      "tpRegPrev": 1,
+      "cadIni": "N",
+      "infoRegimeTrab": {
+        "infoCeletista": null,
+        "infoEstatutario": {
+          "tpProv": 2,
+          "dtExercicio": 1751857200000,
+          "tpPlanRP": null,
+          "indTetoRGPS": null,
+          "indAbonoPerm": null,
+          "dtIniAbono": null
+        }
+      },
+      "infoContrato": {
+        "nmCargo": null,
+        "dtIngrCargo": null,
+        "nmFuncao": "Assessor A7",
+        "acumCargo": "N",
+        "codCateg": 302,
+        "remuneracao": {
+          "vrSalFx": null,
+          "undSalFixo": 0,
+          "dscSalVar": null
+        },
+        "duracao": {
+          "tpContr": 0,
+          "dtTerm": null,
+          "objDet": null,
+          "clauAssec": null
+        },
+        "localTrabalho": {
+          "localTrabGeral": {
+            "tpInsc": 1,
+            "nrInsc": "02476034000182",
+            "descComp": "SECRETARIA DE ESTADO DA ADMINISTRAÇÃO"
+          },
+          "localTempDom": null
+        },
+        "horContratual": {
+          "qtdHrsSem": null,
+          "tpJornada": 0,
+          "dscTpJorn": null,
+          "tmpParc": 0,
+          "horNoturno": null,
+          "dscJorn": null
+        },
+        "alvaraJudicial": null,
+        "observacoes": null,
+        "treiCap": [],
+        "cbocargo": null,
+        "cbofuncao": "411010"
+      },
+      "sucessaoVinc": null,
+      "transfDom": null,
+      "mudancaCPF": null,
+      "afastamento": null,
+      "desligamento": null,
+      "cessao": null
+    },
+    "cpf": "03458170103",
+    "dataEvento": 1751857200000,
+    "matricula": "V627777"
+  },
+  "evento": {
+    "id": 23430979,
+    "ocorrencia": 13662660,
+    "estado": {
+      "id": 5,
+      "descricao": "ERRO"
+    },
+    "idEvento": "ID1024760340000002025071620073201545",
+    "tipoEvento": {
+      "desTipo": "Cadastramento Inicial do Vínculo e Admissão/Ingresso de Trabalhador",
+      "grupoTipoEvento": {
+        "id": 2,
+        "descricao": "Eventos Não Periódicos"
+      },
+      "codTipo": 2200
+    },
+    "enviosEvento": [
+      {
+        "id": 14675282,
+        "lote": null,
+        "codRespostaProcessamento": null,
+        "dtaGeracaoEvento": 1752707313000,
+        "versao": "S-1:3",
+        "erroInterno": "Evento 23430979: Não foi possível gerar o XML - O XML é inválido em relação ao esquema - cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '\\d{11}' for type 'TS_cpfDep'.",
+        "errosProcessamento": []
+      }
+    ],
+    "nrRecibo": null
+  }
+}

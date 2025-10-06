@@ -1,0 +1,155 @@
+{
+  "id": 14147603,
+  "tipoOcorrencia": "TSV_INICIO",
+  "referencia": "630785|1758908045730",
+  "operacao": "NORMAL",
+  "retificarRecibo": null,
+  "dataOcorrencia": 1758908045000,
+  "dataRecebimento": 1758908045000,
+  "idOrigemControle": 575599,
+  "txtDadosOcorrencia": "{\"tipo\":\".TSVInicio\",\"ideEmpregador\":{\"tpInsc\":1,\"nrInsc\":\"13232306\"},\"trabalhador\":{\"cpfTrab\":\"00855101148\",\"nmTrab\":\"RENATO FREDERICO VIEIRA DE ASSIS\",\"sexo\":\"M\",\"racaCor\":3,\"estCiv\":1,\"grauInstr\":\"07\",\"nascimento\":{\"dtNascto\":459658800000,\"paisNascto\":\"105\",\"paisNac\":\"105\"},\"endereco\":{\"brasil\":{\"tpLograd\":\"R\",\"dscLograd\":\"227A\",\"nrLograd\":\"331\",\"complemento\":\"S/C\",\"bairro\":\"SETOR LESTE UNIVERSITÁRIO\",\"cep\":\"74610155\",\"codMunic\":5208707,\"uf\":\"GO\"}},\"infoDeficiencia\":{\"defFisica\":\"N\",\"defVisual\":\"N\",\"defAuditiva\":\"N\",\"defMental\":\"N\",\"defIntelectual\":\"N\",\"reabReadap\":\"N\"}},\"infoTSVInicio\":{\"cadIni\":\"N\",\"codCateg\":410,\"matricula\":\"V630785\",\"dtInicio\":1756695600000,\"infoComplementares\":{\"cargoFuncao\":{\"nmFuncao\":\"Diretor Municipal de Agricultura, Agropecuária, Indústria e Comércio - ITARUMÃ\",\"cbofuncao\":\"111415\"},\"infoTrabCedido\":{\"categOrig\":302,\"cnpjCednt\":\"01067271000127\",\"matricCed\":\"325001366\",\"dtAdmCed\":1756695600000,\"tpRegTrab\":2,\"tpRegPrev\":1,\"infOnus\":0},\"localTrabGeral\":{\"tpInsc\":1,\"nrInsc\":\"13232306000115\"}}},\"dataEvento\":1756695600000,\"cpf\":\"00855101148\",\"matricula\":\"V630785\"}",
+  "cnpjEmpregador": "13232306",
+  "dadosOcorrencia": {
+    "tipo": ".TSVInicio",
+    "ideEmpregador": {
+      "tpInsc": 1,
+      "nrInsc": "13232306"
+    },
+    "trabalhador": {
+      "cpfTrab": "00855101148",
+      "nmTrab": "RENATO FREDERICO VIEIRA DE ASSIS",
+      "sexo": "M",
+      "racaCor": 3,
+      "estCiv": 1,
+      "grauInstr": "07",
+      "nmSoc": null,
+      "nascimento": {
+        "dtNascto": 459658800000,
+        "paisNascto": "105",
+        "paisNac": "105"
+      },
+      "endereco": {
+        "brasil": {
+          "tpLograd": "R",
+          "dscLograd": "227A",
+          "nrLograd": "331",
+          "complemento": "S/C",
+          "bairro": "SETOR LESTE UNIVERSITÁRIO",
+          "cep": "74610155",
+          "codMunic": 5208707,
+          "uf": "GO"
+        },
+        "exterior": null
+      },
+      "trabImig": null,
+      "infoDeficiencia": {
+        "defFisica": "N",
+        "defVisual": "N",
+        "defAuditiva": "N",
+        "defMental": "N",
+        "defIntelectual": "N",
+        "reabReadap": "N",
+        "infoCota": null,
+        "observacao": null
+      },
+      "dependente": null,
+      "contato": null
+    },
+    "infoTSVInicio": {
+      "cadIni": "N",
+      "codCateg": 410,
+      "matricula": "V630785",
+      "nrProcTrab": null,
+      "dtInicio": 1756695600000,
+      "natAtividade": null,
+      "infoComplementares": {
+        "cargoFuncao": {
+          "nmCargo": null,
+          "nmFuncao": "Diretor Municipal de Agricultura, Agropecuária, Indústria e Comércio - ITARUMÃ",
+          "cbocargo": null,
+          "cbofuncao": "111415"
+        },
+        "remuneracao": null,
+        "fgts": null,
+        "infoDirigenteSindical": null,
+        "infoTrabCedido": {
+          "categOrig": 302,
+          "cnpjCednt": "01067271000127",
+          "matricCed": "325001366",
+          "dtAdmCed": 1756695600000,
+          "tpRegTrab": 2,
+          "tpRegPrev": 1,
+          "infOnus": 0
+        },
+        "infoEstagiario": null,
+        "infoMandElet": null,
+        "localTrabGeral": {
+          "tpInsc": 1,
+          "nrInsc": "13232306000115",
+          "descComp": null
+        }
+      },
+      "afastamento": null,
+      "termino": null,
+      "mudancaCPF": null
+    },
+    "dataEvento": 1756695600000,
+    "cpf": "00855101148",
+    "matricula": "V630785"
+  },
+  "evento": {
+    "id": 23919241,
+    "ocorrencia": 14147603,
+    "estado": {
+      "id": 3,
+      "descricao": "PROCESSADO COM SUCESSO"
+    },
+    "idEvento": "ID1132323060000002025092614345212116",
+    "tipoEvento": {
+      "desTipo": "Trabalhador Sem Vínculo de Emprego/Estatutário - Início",
+      "grupoTipoEvento": {
+        "id": 2,
+        "descricao": "Eventos Não Periódicos"
+      },
+      "codTipo": 2300
+    },
+    "enviosEvento": [
+      {
+        "id": 15165398,
+        "lote": {
+          "id": 1664212,
+          "estado": {
+            "id": 3,
+            "descricao": "PROCESSADO COM SUCESSO"
+          },
+          "codigoResposta": {
+            "id": 11,
+            "desResposta": "Lote recebido com sucesso",
+            "codGrupoResposta": 1,
+            "codResposta": 201
+          },
+          "dtaEnvio": 1758908153000,
+          "protocolo": "1.1.202509.0000000012126895321",
+          "retorno": "<eSocial xmlns=\"http://www.esocial.gov.br/schema/lote/eventos/envio/retornoEnvio/v1_1_0\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <retornoEnvioLoteEventos>\n        <ideEmpregador>\n            <tpInsc>1</tpInsc>\n            <nrInsc>13232306</nrInsc>\n        </ideEmpregador>\n        <ideTransmissor>\n            <tpInsc>1</tpInsc>\n            <nrInsc>02476034000182</nrInsc>\n        </ideTransmissor>\n        <status>\n            <cdResposta>201</cdResposta>\n            <descResposta>Lote Recebido com Sucesso.</descResposta>\n        </status>\n        <dadosRecepcaoLote>\n            <dhRecepcao>2025-09-26T14:35:53.29</dhRecepcao>\n            <versaoAplicativoRecepcao>0.1.0.0</versaoAplicativoRecepcao>\n            <protocoloEnvio>1.1.202509.0000000012126895321</protocoloEnvio>\n        </dadosRecepcaoLote>\n    </retornoEnvioLoteEventos>\n</eSocial>",
+          "resposta": {
+            "id": 11,
+            "desResposta": "Lote recebido com sucesso",
+            "codGrupoResposta": 1,
+            "codResposta": 201
+          }
+        },
+        "codRespostaProcessamento": {
+          "id": 1,
+          "desResposta": "Sucesso",
+          "codGrupoResposta": 2,
+          "codResposta": 201
+        },
+        "dtaGeracaoEvento": 1758908152000,
+        "versao": "S-1:3",
+        "erroInterno": null,
+        "errosProcessamento": []
+      }
+    ],
+    "nrRecibo": "1.1.0000000034771529822"
+  }
+}
