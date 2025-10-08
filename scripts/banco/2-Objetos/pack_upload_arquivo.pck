@@ -406,7 +406,7 @@ create or replace package body pack_upload_arquivo is
                         v_valor := func_get_field(r_arq.txt_linha,j);
                         
                         ----------
-                        v_valor := trim(v_valor);
+                        v_valor := trim(v_valor); --Tirar Espaço em branco no inicio e fim
                         
                         --
                         if j = 1 then
@@ -522,7 +522,8 @@ create or replace package body pack_upload_arquivo is
                         end if;
                     end loop;
                     
-                     -- CPF inválido
+                    --Validaçãoes Campos
+                    -- CPF inválido
                     IF LENGTH(TRIM(rarq(i).cpfTrab)) != 11 OR NOT REGEXP_LIKE(rarq(i).cpfTrab, '^[0-9]+$') THEN
                         v_erros := v_erros || 'CPF inválido; ';
                     END IF;
@@ -624,7 +625,7 @@ create or replace package body pack_upload_arquivo is
         dbms_output.put_line('data_inicio_processamento: '||to_char(v_data_ini,'dd/mm/rrrr hh24:mi:ss'));
         dbms_output.put_line('data_fim_processamento...: '||to_char(v_data_fim,'dd/mm/rrrr hh24:mi:ss'));
 
-        commit;
+        --commit; --Comentado para Teste 
     end proc_valida_S2200;
 end pack_upload_arquivo;
 /
