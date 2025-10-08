@@ -84,6 +84,20 @@ type r_s2200 is record(indRetif           VARCHAR2(200)
   type t_s2200 is table of r_s2200;
   type cc_s2200 is ref cursor return r_s2200;
   */
+  
+  type r_erro is record(dt_execucao         DATE
+                        ,nome_arquivo        varchar2(100)
+                        ,total_registros     NUMBER
+                        ,registros_validos   NUMBER
+                        ,registros_invalidos NUMBER
+                        ,taxa_erro_pct       NUMBER
+                        ,data_inicio_processamento date
+                        ,data_fim_processamento    date
+                        );
+  type t_erro is table of r_erro;
+  type cc_erro is ref cursor return r_erro;
+
+  
   function func_arq_para_clob(p_nome_diretorio in varchar2
                              ,p_nome_arquivo   in varchar2
                              )return clob;
@@ -118,7 +132,7 @@ create or replace package body pack_upload_arquivo is
         v_valida     number;
         v_dest_offset number := 1;
         v_src_offset  number := 1;
-        v_lang_context number;
+        v_lang_context number;        
     begin
         --1. Criar o BFILE, que é um ponteiro para o arquivo externo
         v_etapa := '[1] Criar o BFILE, ponteiro para o arquivo externo';
@@ -333,7 +347,8 @@ create or replace package body pack_upload_arquivo is
                                ,p_msg_erro     in out varchar2
                                ) is
       cursor crs_arq(p_nome_arquivo in varchar2) is
-      select i.num_linha
+      select i.id_integra_sead_esocial
+            ,i.num_linha
             ,i.txt_linha
         from integra_sead_esocial i
        where i.nome_arquivo = p_nome_arquivo
@@ -346,13 +361,24 @@ create or replace package body pack_upload_arquivo is
       --
       v_cpfTrab  varchar2(4000);
       v_etapa    varchar2(100);
+      --
+        v_data_execucao date;
+        v_data_ini      date;
+        v_data_fim      date;
+        
+        v_total_registros     NUMBER;
+        v_registros_validos   NUMBER;
+        v_registros_invalidos NUMBER;
     begin
+        v_data_execucao := sysdate;
+        
         if p_nome_arquivo is null then 
             p_msg_erro := 'Arquivo não informado.';  
         else
             if crs_arq%isopen  then close crs_arq; end if;--Cursor Aberto. Fechar cursor    
         
             v_etapa :=  'Consultar Arquivo';
+            v_data_ini := sysdate;
             --Consultar Arquivo
             open crs_arq(p_nome_arquivo);
             loop
@@ -379,6 +405,10 @@ create or replace package body pack_upload_arquivo is
                         v_etapa :=  'Linha: '||v_linha||'. Separar por campos - Coluna: '||j;
                         v_valor := func_get_field(r_arq.txt_linha,j);
                         
+                        ----------
+                        v_valor := trim(v_valor);
+                        
+                        --
                         if j = 1 then
                             v_etapa          := 'Separar campo - indRetif';
                             rarq(i).indRetif := v_valor;
@@ -538,11 +568,32 @@ create or replace package body pack_upload_arquivo is
                     
                     
                     if v_erros IS NOT NULL THEN
+                        v_registros_invalidos := nvl(v_registros_invalidos,0)+1;
+                        
                         v_erros := v_linha||';'||rarq(i).cpfTrab||';'||rarq(i).nmTrab||';'||rarq(i).orgao||';'||v_erros;
                         
+                        update integra_sead_esocial i
+                           set i.status = 5 --5-Nunca integrar --0-Novo, 1-Pronto para integrar, 2-Em integraçao, 3-Integrado com Sucesso, 4-Integrado com Erro, 5-Nunca integrar 
+                              ,i.observacao = v_erros
+                         where i.id_integra_sead_esocial = r_arq.id_integra_sead_esocial
+                           and i.status = 0;
+                           
                         dbms_output.put_line(v_erros); 
                         v_erros := null;
                         --exit;
+                    else
+                        --
+                        v_registros_validos := nvl(v_registros_validos,0)+1;
+                        
+                        update integra_sead_esocial i
+                           set i.status = 1 --5-Nunca integrar --0-Novo, 1-Pronto para integrar, 2-Em integraçao, 3-Integrado com Sucesso, 4-Integrado com Erro, 5-Nunca integrar 
+                              ,i.observacao = v_erros
+                         where i.id_integra_sead_esocial = r_arq.id_integra_sead_esocial
+                           and i.status = 0;
+                        
+                        v_erros := v_linha||';OK';
+                        dbms_output.put_line(v_erros); 
+                        v_erros := null;
                     end if;
                     --
                 exception
@@ -556,7 +607,24 @@ create or replace package body pack_upload_arquivo is
                          exit;
                 end;
             end loop;
-        end if;  
+            
+            v_data_fim := sysdate;
+            v_linha := v_linha-1;
+        end if;
+        
+        dbms_output.put_line('');
+        dbms_output.put_line('--------------------------');
+        dbms_output.put_line('INDICADOR - VALOR');
+        dbms_output.put_line('dt_execucao..............: '||to_char(v_data_execucao,'dd/mm/rrrr hh24:mi:ss'));
+        dbms_output.put_line('nome_arquivo.............: '||p_nome_arquivo);
+        dbms_output.put_line('total_registros..........: '||v_linha);
+        dbms_output.put_line('registros_validos........: '||v_registros_validos);
+        dbms_output.put_line('registros_invalidos......: '||v_registros_invalidos);
+        --dbms_output.put_line('taxa_erro_pct............: '||);
+        dbms_output.put_line('data_inicio_processamento: '||to_char(v_data_ini,'dd/mm/rrrr hh24:mi:ss'));
+        dbms_output.put_line('data_fim_processamento...: '||to_char(v_data_fim,'dd/mm/rrrr hh24:mi:ss'));
+
+        commit;
     end proc_valida_S2200;
 end pack_upload_arquivo;
 /
